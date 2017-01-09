@@ -1,6 +1,6 @@
 (function(angular) {
     "use strict";
-    angular.module("ngColorUtils").factory("hex2rgba", [ function() {
+    angular.module("ngColorUtils", []).factory("hex2rgba", [ function() {
         return {
             get: function(hex, alpha) {
                 var patt = /^#([\da-fA-F]{2})([\da-fA-F]{2})([\da-fA-F]{2})$/;

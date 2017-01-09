@@ -1,7 +1,7 @@
 (function (angular) {
   'use strict';
 
-  angular.module('ngColorUtils').factory('hex2rgba', [function () {
+  angular.module('ngColorUtils', []).factory('hex2rgba', [function () {
 
       return {
           /**
