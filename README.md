@@ -15,9 +15,9 @@ angular('yourAngularApp',['ngColorUtils']);
 
 <h4>Usage/Example</h4>
 ```javascript
-app.controller('modalNotifyCtrl', ['$scope', 'hex2rgba', 'ngDialog', 'modalNotifyObj', function ($scope, hex2rgba, ngDialog, modalNotifyObj) {
+app.controller('myCtrl', ['$scope', '$log', 'hex2rgba', function ($scope, $log, hex2rgba) {
 
-    hex2rgba.get('#000000', 0.5);
+    $log.info( hex2rgba.get('#000000', 0.5) );
 
 }]);
 ```
